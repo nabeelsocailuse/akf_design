@@ -11,6 +11,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/akf_design/css/akf_design.css"
+app_include_css = "/assets/akf_design/css/xperterp.css"
 # app_include_js = "/assets/akf_design/js/akf_design.js"
 
 # include js, css files in header of web template
