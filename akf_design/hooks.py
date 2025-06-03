@@ -69,13 +69,13 @@ app_include_css = "/assets/akf_design/css/xperterp.css"
 # ------------
 
 # before_install = "akf_design.install.before_install"
-# after_install = "akf_design.install.after_install"
+after_install = "akf_design.install.after_install"
 
 # Uninstallation
 # ------------
 
 # before_uninstall = "akf_design.uninstall.before_uninstall"
-# after_uninstall = "akf_design.uninstall.after_uninstall"
+after_uninstall = "akf_design.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
