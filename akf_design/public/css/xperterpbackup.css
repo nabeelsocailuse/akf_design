@@ -223,8 +223,8 @@ body {
     background-color: transparent;
     border-color: var(--secondary-btn-border-color);
     border-radius: var(--secondary-btn-border-radius);
-    /* padding: var(--secondary-btn-spacing) !important; */
-    /* font-size: var(--secondary-btn-text-size); */
+    padding: var(--secondary-btn-spacing) !important;
+    font-size: var(--secondary-btn-text-size);
     height: auto;
     line-height: var(--secondary-btn-line-height);
     color: var(--secondary-btn-text-color);
@@ -275,13 +275,12 @@ label.control-label {
     border-radius: var(--input-border-radius);
     font-size: var(--input-text-size);
     font-weight: var(--input-text-weight) !important;
-    /* margin-bottom: var(--input-margin-bottom); */
+    margin-bottom: var(--input-margin-bottom);
     padding: var(--input-field-padding);
     line-height: var(--input-line-height);
     background: transparent;
     border: 1px solid var(--input-border-color);
-    /* disturbing the default height of input field */
-    /* height: auto; */
+    height: auto;
 }
 
 .form-control:focus {
@@ -289,24 +288,17 @@ label.control-label {
     /* border-color: var(--bg-color); */
 }
 
-/* for input field height taking */
-/* .input-xs {
+.input-xs {
     font-size: var(--input-text-size);
     font-weight: var(--input-text-weight);
     height: auto;
-} */
+}
 
-/* for select tag input field distubring */
-/* select.form-control {
+select.form-control {
     padding: var(--input-field-padding);
-} */
+}
 
-/* input field select tag text down */
-/* .multiselect-list .status-text {
-    top: 8px;
-} */
-/* http://192.168.10.137/app/account/Bank%20Account%20-%20AKFP on this page for input p down arrow on accoung page inpurt field  */
-/* .frappe-control[data-fieldtype=Select] .control-input .select-icon, */
+.frappe-control[data-fieldtype=Select] .control-input .select-icon,
 .frappe-control[data-fieldtype=Select].form-group .select-icon,
 .frappe-control[data-fieldtype=Select] .control-input .select-icon.xs,
 .frappe-control[data-fieldtype=Select].form-group .select-icon.xs,
@@ -320,7 +312,9 @@ label.control-label {
     left: 17px;
 }
 
-
+.multiselect-list .status-text {
+    top: 8px;
+}
 
 select.input-xs {
     line-height: var(--input-line-height);
@@ -333,7 +327,6 @@ select.input-xs {
 
 .awesomplete .input-with-feedback {
     background-color: transparent;
-    text-overflow: ellipsis;
 }
 
 .btn.btn-default .icon,
@@ -542,7 +535,7 @@ select.input-xs {
 
 .page-head .custom-actions .btn.btn-default:hover .icon-sm,
 .page-head .standard-actions .btn.btn-default:hover .icon-sm {
-    fill: var(--secondary-btn-text-color);
+    fill: none;
 }
 
 .btn-primary-light {
@@ -558,266 +551,11 @@ select.input-xs {
     stroke: var(--icon-stroke);
     filter: invert(1) brightness(3) contrast(1.2);
 }
-
-.frappe-control[data-fieldtype=Color] .selected-color {
+.frappe-control[data-fieldtype=Color] .selected-color{
     top: 10px;
 }
-
-.datatable .dt-cell {
-    background-color: white !important;
-}
-
-/* =============================================for table td placeholder going to bottom of input field in general legage ===========================================================*/
-.multiselect-list .status-text {
-    position: unset;
-    margin-top: -4px;
-}
-
-/* for dropdown in list sidebar */
-.list-sidebar .dropdown-menu {
-    max-width: 200px;
-}
-
-.list-sidebar .dropdown-menu .dropdown-item .applied {
-    position: absolute;
-    left: 128px;
-}
-
-/* for li in dropdown background switch*/
-.awesomplete>ul {
-    background-color: #ffffff;
-}
-
-.awesomplete>ul>li:hover,
-.awesomplete>ul>li[aria-selected=true] {
-    background-color: #E5F4FF;
-}
-
-/* for navbar list item dropdown bold text */
-.awesomplete>ul>li a span b {
-    font-weight: normal;
-}
-
-/* for navbar list item dropdown bold text on active */
-.awesomplete>ul>li[aria-selected="true"] a span {
-    font-weight: bold;
-}
-
-/* for navbar list item icon */
-.custom-actions .icon-sm {
-    fill: #ffffff;
-}
-
-/* for data legder page tr first heigth */
-.datatable .dt-header .dt-row[data-is-filter] {
-    height: auto;
-}
-
-/* SAME PAGE PROJECT SELECTED IN DROPDOWN */
-.datatable.dt-instance-1 .dt-cell {
-    /* height: 35px; */
-    height: auto;
-}
-
-/* for project backgroudn kin some table header are light blue */
-.datatable {
-    background: white;
-}
-
-/* for all acounting or ither services footer backrground for comments */
-.form-footer {
-    position: relative;
-    background: white;
-    padding: 18px;
-    margin-top: 24px;
-    border-radius: 8px;
-}
-
-/* for bottom scrol top icon */
-.form-footer .scroll-to-top {
-    bottom: 18px;
-    right: 18px;
-}
-
-/* for activity background color */
-.new-timeline .activity-title,
-.new-timeline .timeline-actions {
-    background-color: white;
-}
-
-/* for 137/app/services in box section every heading taking lots of space  */
-.missing-attendance,
-.absent-days,
-.late-entry,
-.early-exit,
-.attendance-request-list,
-.leave-application-list,
-.employee-dependents {
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
-.form-control,
-.like-disabled-input {
-    text-overflow: ellipsis;
-}
-
-/* for all table to align center and taking equal spaces */
-.list-row-container {
-    padding-inline: 0;
-}
-
-/* for no result found in search bar  */
-.search-dialog .search-header .search-input {
-    border: none;
-    border-bottom: 1px solid var(--border-color);
-}
-
-/* for login page both container are overlapping */
-.for-login .sign-up-message {
-    display: none;
-}
-
-/* http://192.168.10.137/app/success-action/view/report ON this page all drop down icon are invisible */
-.dt-dropdown {
-    right: 4px;
-}
-
-.dt-dropdown__toggle {
-    opacity: 1;
-}
-
-/* for all search content in modal  */
-.search-dialog .search-results {
-    justify-content: start;
-}
-
-/* for hoempage input field border hidden on editing page*/
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content {
-    margin-inline: 2px;
-}
-
-/* for spacer in same editsection */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.edit-mode.spacer {
-    border: none;
-    background: var(--bg-color);
-}
-
-/* for edit icon + in home proper alignment*/
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .new-block-button {
-    top: 0px;
-    left: 5px;
-}
-
-/* in edit top section icon taking margin in negetive */
-.widget.onboarding-widget-box .widget-head .widget-control {
-    /* margin-top: -5px; */
-    margin-top: 0;
-}
-
-/* for all cards padding  */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.edit-mode {
-    padding: 12px;
-}
-
-/* for spaces in edit section it taking height */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.spacer {
-    /* height: 18px !important; */
-    height: auto !important;
-}
-
-/* when clicking on + and add some neaw sectin than the blue icon taking white bg on hover  */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.paragraph .paragraph-control {
-    /* background-color: var(--card-bg); */
-    background-color: transparent;
-}
-
-/* general ledger page input field */
-.datatable .dt-row-filter .dt-filter.dt-input {
-    border: 1px solid var(--input-border-color);
-}
-
-.datatable .dt-row-filter .dt-filter.dt-input:focus {
-    /* box-shadow: var(--focus-default); */
-    box-shadow: none;
-}
-
-/* same in edit top section */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block.ce-block--focused .widget {
-    /* box-shadow: var(--shadow-base) !important; */
-    box-shadow: none !important;
-}
-
-/* in uper section tick taking white bg */
-[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block.ce-block--focused .widget.onboarding .onboarding-step.active .step-index.step-pending {
-    background: transparent;
-}
-
-.widget.onboarding-widget-box.edit-mode:hover .onboarding-step.active .step-index.step-pending {
-    background-color: transparent;
-}
-
-/* for sidebar dropdown icon takking padding which afect the sidebar item on hovor */
-[data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .drop-icon,
-[data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .drop-icon {
-    padding: 0px 8px 0px 2px;
-}
-
-.btn.btn-secondary {
-    line-height: auto;
-}
-
-
-/* for item list height  */
-/* .layout-main-section .frappe-list,
-.layout-main-section .report-wrapper*/
-    /* height: calc(100vh - 268px); 
-    overflow: hidden;
-} 
-*/
-/* for the home page table scroll fixed it will apply on all data table and some table have 4 5 row so there desighn were desurbing*/
-/* .layout-main-section.frappe-card {
-    overflow: auto;
-    height: calc(100vh - 180px);
-} */
- /* it is for all data tables complete height like general ledger table */
-/* .layout-main-section-wrapper{
-    height: calc(100vh - 180px);
-}  */
-
-/* for top navbar icon takking 100% width which disturb the design */
-.content.page-container .row.flex.align-center.page-head-content.justify-between .col-md-4.col-sm-6.col-xs-7.page-title{
-    width: 50%;
-}
-.content.page-container .row.flex.align-center.page-head-content.justify-between > :last-child{
-    width: 40%;
-}
-/* for the navbar sticky is takes to too much space from top */
-.page-head {
-    top: 0!important
-}
-/* for the balance trial page project drop down  */
-.page-form .awesomplete>ul {
-    min-width: 70px;
-}
-/* for the table aghosh form mobile screen tabs*/
-.level-right.text-muted.ellipsis .level-item.visible-xs.text-right{
-    margin-left: -72px;
-
-}
-/* for the balance trial report navbar sticky positioning http://192.168.10.137/app/salary-slip/Sal%20Slip%2FAHF-PK-CO-00061%2F00005 thipage top details navbar */
-.form-tabs-sticky-down {
-    top: 78px;
-}
-/* ====================================================================================================== */
 @media (max-width:991px) {
     [data-page-route=Workspaces] .layout-main .layout-side-section {
-        height: unset;
-        padding: 0;
-    }
-    /* for the sidebar menu taking height on mobile screen */
-    .row.layout-main .layout-side-section
-   {
         height: unset;
         padding: 0;
     }
