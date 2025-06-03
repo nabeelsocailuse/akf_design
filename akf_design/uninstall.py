@@ -4,8 +4,8 @@ import os
 def after_uninstall():
 	username_os = os.getlogin()
 	bench_folder = "frappe-bench" if(username_os=="frappe") else "frappe-alkhidmat"
-	old_file_path = f"/home/{cur_username_os}/{bench_folder}/apps/frappe/frappe/www/login.html"
-	new_file_path = f"/home/{cur_username_os}/{bench_folder}/apps/frappe/frappe/www/login_stop.html"
+	old_file_path = f"/home/{username_os}/{bench_folder}/apps/frappe/frappe/www/login.html"
+	new_file_path = f"/home/{username_os}/{bench_folder}/apps/frappe/frappe/www/login_stop.html"
 	try:
 		os.rename(new_file_path, old_file_path)
 		print(f"File renamed from '{new_file_path}' to '{old_file_path}'")
