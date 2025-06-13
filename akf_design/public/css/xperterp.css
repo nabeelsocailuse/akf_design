@@ -119,6 +119,8 @@ body {
 .navbar-home img.app-logo {
     width: 65px !important;
     max-height: unset;
+    /* we are adding the navbar brand height logo bcz the height of navbar are taking less space */
+    height: 65px;
 }
 
 .layout-side-section,
@@ -793,9 +795,9 @@ select.input-xs {
     width: 40%;
 }
 /* for the navbar sticky is takes to too much space from top */
-.page-head {
+/* .page-head {
     top: 0!important
-}
+} */
 /* for the balance trial page project drop down  */
 .page-form .awesomplete>ul {
     min-width: 70px;
@@ -809,6 +811,7 @@ select.input-xs {
 .form-tabs-sticky-down {
     top: 78px;
 }
+
 /* ====================================================================================================== */
 @media (max-width:991px) {
     [data-page-route=Workspaces] .layout-main .layout-side-section {

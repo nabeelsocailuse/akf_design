@@ -199,7 +199,7 @@
         justify-content: space-between;
 
     }
-
+/* for all section left side css*/
     .for-login .left_section,
     .for-forgot .left_section,
     .for-login-with-email-link .left_section {
@@ -258,7 +258,7 @@
     }
 
     .login-content.page-card .btn.btn-primary {
-        min-height: 48px;
+        /* min-height: 48px; */
         border-radius: 4px;
         border-color: var(--primary);
     }
@@ -268,7 +268,8 @@
     }
 
     .form-control {
-        min-height: 48px;
+        /* min-height: 48px; */
+        min-height: 34px;
         border-radius: 4px;
     }
 
@@ -297,7 +298,8 @@
     #page-login .for-forgot .page-card .page-card-body .field-icon,
     #page-login .for-login-with-email-link .page-card .page-card-body .field-icon,
     #page-login .for-login .page-card .page-card-body .password-field .toggle-password {
-        top: 15px;
+        /* top: 15px; */
+        top: 10px;
     }
 
 
@@ -457,6 +459,17 @@
     .for-login-with-email-link .page-card {
         padding: 45px 24px !important;
     }
+    /* for left section css */
+    .for-forgot .left_section,.for-login-with-email-link .left_section{
+        display: none;
+    }
+    .form-forgot .page-card-head{
+        padding-top: 0px;
+    }
+    #page-login .for-forgot .page-card .page-card-body .field-icon, #page-login .for-login-with-email-link .page-card .page-card-body .field-icon{
+        top:7px
+    }
+
 
     @media screen and (max-width: 1199px) {
 
@@ -568,9 +581,6 @@
             margin: 10px 0px;
         }
 
-        /*.social-login-buttons{*/
-        /*    display:none;*/
-        /*}*/
         .for-login .page-card .page-card-body .social-logins .social-login-buttons {
 
             margin: 0px;
@@ -647,7 +657,7 @@
         background-image: url(/assets/akf_design/images/akf_bg_img.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: calc(100vh - 108px);
+        height: calc(100vh - 106px);
         background-position: bottom;
         display: flex;
         justify-content: center;
@@ -881,12 +891,15 @@
         </div>
 
     </section>
-
     <section class='for-forgot'>
         {{ logo_section('Forgot Password') }}
         <div class="login-content page-card">
             <form class="form-signin form-forgot hide" role="form">
+                 <div class="page-card-head">
+					<h4>Forgot Password</h4>
+				</div>
                 <div class="page-card-body">
+
                     <div class="email-field">
                         <input type="email" id="forgot_email" class="form-control"
                             placeholder="{{ _('Email Address') }}" required autofocus autocomplete="username">
