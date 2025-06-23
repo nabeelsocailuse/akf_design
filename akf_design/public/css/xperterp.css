@@ -2,19 +2,22 @@
 
 /**************Global Variables Start*****************/
 :root {
-    /* Font Family  */
+    /* Font Family */
     --font-family-base: "Inter", sans-serif;
 
-    /* Neutral Colors  */
+    /* Neutral Colors */
     --bg-color: #E5F4FF;
-    /* Primary Colors  */
+
+    /* Primary Colors */
     --primary-blue-color: #0060ae;
 
-    /* Border Radius  */
+    /* Border Radius */
     --border-radius: 8px;
+
     /* Title */
     --title-font-size: 18px;
     --title-font-weight: 600;
+
     /* Status */
     --cancel-text-color: #F30019;
     --cancel-border-color: #F30019;
@@ -24,7 +27,8 @@
     --pending-border-color: #686A6B;
     --inprocess-text-color: #FF8A00;
     --inprocess-border-color: #FF8A00;
-    /* INPUT LABLE */
+
+    /* Input Label */
     --label-color: #3C3D3E;
     --label-size: 14px;
     --label-weight: 500;
@@ -32,7 +36,8 @@
     --label-line-height: 20px;
 
     --navbar-height: 79px;
-    /* INPUT FEILD */
+
+    /* Input Field */
     --input-border-color: #909294;
     --input-border-radius: 4px;
     --input-text-size: 16px;
@@ -46,10 +51,11 @@
     --heading-color: #040404;
     --white: #ffffff;
 
-    /* INPUT FEILD */
+    /* Disabled Input */
     --disable-input-background: #D4D2D5;
     --disable-input-border-color: #D4D2D5;
-    /* Primary BUTTONS  */
+
+    /* Primary Buttons */
     --primary-btn-bg: #008DFF;
     --primary-btn-border-color: #008DFF;
     --primary-btn-border-radius: 4px;
@@ -58,18 +64,14 @@
     --primary-btn-spacing: 6px 12px;
     --primary-btn-text-color: #fff;
     --primary-btn-text-weight: 400;
-    /* Primary BUTTONS ON HOVER */
     --primary-btn-hover-bg: #44ABFF;
     --primary-btn-hover-border-color: #44ABFF;
-    /* Primary BUTTONS ON Click or focus*/
     --primary-btn-focus-bg: #0067BB;
     --primary-btn-focus-border-color: #0067BB;
-    /* Primary BUTTONS Disable*/
     --btn-bg: #D4D2D5;
     --btn-border-color: #D4D2D5;
 
-
-    /* Secondary BUTTONS  */
+    /* Secondary Buttons */
     --secondary-btn-bg: #fff;
     --secondary-btn-border-color: #008DFF;
     --secondary-btn-border-radius: 4px;
@@ -78,17 +80,13 @@
     --secondary-btn-spacing: 6px 12px;
     --secondary-btn-text-color: #008DFF;
     --secondary-btn-text-weight: 400;
-    /* Secondary BUTTONS ON HOVER */
     --secondary-btn-hover-border-color: #44ABFF;
     --secondary-btn-hover-text-color: #44ABFF;
-    /* Secondary BUTTONS ON Click or focus*/
     --secondary-btn-focus-border-color: #0067BB;
     --secondary-btn-focus-text-color: #0067BB;
-    /* Secondary BUTTONS Disable*/
-    --btn-border-color: #D4D2D5;
     --btn-text-color: #D4D2D5;
 
-    /* TYPOGRAPHY */
+    /* Typography */
     --font-light: 300;
     --font-normal: 400;
     --font-medium: 500;
@@ -100,17 +98,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* asfspu */
-/* [data-page-route=Workspaces] .standard-sidebar-item .item-anchor{
-    padding: 10px;
-}
-.desk-sidebar .standard-sidebar-label {
-    font-size: 20px;
-}
-.ellipsis.title-text{
-    display: none;
-}  */
-/* Change the navbar background color */
 .navbar {
     background-color: #fff;
     height: auto;
@@ -119,12 +106,11 @@ body {
 .navbar-home img.app-logo {
     width: 65px !important;
     max-height: unset;
-    /* we are adding the navbar brand height logo bcz the height of navbar are taking less space */
     height: 65px;
 }
 
 .layout-side-section,
-[data-page-route=Workspaces] .layout-main .layout-side-section {
+[data-page-route="Workspaces"] .layout-main .layout-side-section {
     background: #fff;
     padding: 15px;
     height: calc(100vh - 180px);
@@ -133,7 +119,7 @@ body {
     scrollbar-color: var(--gray-200) transparent;
 }
 
-[data-page-route=Workspaces] .layout-main .layout-main-section-wrapper .page-main-content {
+[data-page-route="Workspaces"] .layout-main .layout-main-section-wrapper .page-main-content {
     height: calc(100vh - 211px);
     overflow-y: auto;
     scrollbar-color: var(--gray-200) transparent;
@@ -145,7 +131,7 @@ body {
     margin-bottom: 20px;
 }
 
-[data-page-route=Workspaces] .layout-main {
+[data-page-route="Workspaces"] .layout-main {
     height: unset;
 }
 
@@ -157,10 +143,6 @@ body {
     background-color: #fff;
 }
 
-/* Change the header text color */
-/* .navbar .navbar-brand, .navbar .navbar-nav > li > a {
-    color: rgb(236, 171, 171) !important;
-} */
 .page-title .title-area .title-text {
     color: #fff;
     font-size: var(--title-font-size);
@@ -210,11 +192,7 @@ body {
     border-color: var(--primary-btn-hover-border-color);
 }
 
-.btn.btn-primary:focus {
-    background-color: var(--primary-btn-focus-bg);
-    border-color: var(--primary-btn-focus-border-color);
-}
-
+.btn.btn-primary:focus,
 .btn.btn-primary:active {
     background-color: var(--primary-btn-focus-bg);
     border-color: var(--primary-btn-focus-border-color);
@@ -225,8 +203,6 @@ body {
     background-color: transparent;
     border-color: var(--secondary-btn-border-color);
     border-radius: var(--secondary-btn-border-radius);
-    /* padding: var(--secondary-btn-spacing) !important; */
-    /* font-size: var(--secondary-btn-text-size); */
     height: auto;
     line-height: var(--secondary-btn-line-height);
     color: var(--secondary-btn-text-color);
@@ -291,22 +267,6 @@ label.control-label {
     /* border-color: var(--bg-color); */
 }
 
-/* for input field height taking */
-/* .input-xs {
-    font-size: var(--input-text-size);
-    font-weight: var(--input-text-weight);
-    height: auto;
-} */
-
-/* for select tag input field distubring */
-/* select.form-control {
-    padding: var(--input-field-padding);
-} */
-
-/* input field select tag text down */
-/* .multiselect-list .status-text {
-    top: 8px;
-} */
 /* http://192.168.10.137/app/account/Bank%20Account%20-%20AKFP on this page for input p down arrow on accoung page inpurt field  */
 /* .frappe-control[data-fieldtype=Select] .control-input .select-icon, */
 .frappe-control[data-fieldtype=Select].form-group .select-icon,
@@ -539,7 +499,26 @@ select.input-xs {
 .custom-actions .icon-sm {
     fill: var(--icon-fill);
     stroke: var(--icon-stroke);
-    /* filter: invert(1) brightness(3) contrast(1.2); */
+    /* filter: invert(1) brightness(3) contrast(3.4); */
+}
+
+.custom-btn-group .dropdown-menu li[data-view="List"] svg {
+    filter: invert(1) brightness(0) contrast(100);
+}
+
+.custom-btn-group .dropdown-menu li[data-view="List"] svg {
+    filter: invert(1) brightness(0) contrast(100);
+}
+
+.custom-btn-group .dropdown-menu li[data-view="Dashboard"] svg {
+    filter: brightness(0) invert(0);
+}
+
+.custom-btn-group .dropdown-menu li[data-view="Dashboard"] .icon.icon-sm {
+    /* filter: invert(1) brightness(3) contrast(3.4); */
+    fill: currentColor;
+    /* Automatically uses text color */
+    transition: fill 0.3s ease-in-out;
 }
 
 .page-head .custom-actions .btn.btn-default:hover .icon-sm,
@@ -570,6 +549,11 @@ select.input-xs {
 }
 
 /* =============================================for table td placeholder going to bottom of input field in general legage ===========================================================*/
+/* for navbar list item icon */
+.custom-actions .icon-sm {
+    fill: #ffffff;
+}
+
 .multiselect-list .status-text {
     position: unset;
     margin-top: -4px;
@@ -605,11 +589,6 @@ select.input-xs {
     font-weight: bold;
 }
 
-/* for navbar list item icon */
-.custom-actions .icon-sm {
-    fill: #ffffff;
-}
-
 /* for data legder page tr first heigth */
 .datatable .dt-header .dt-row[data-is-filter] {
     height: auto;
@@ -617,7 +596,6 @@ select.input-xs {
 
 /* SAME PAGE PROJECT SELECTED IN DROPDOWN */
 .datatable.dt-instance-1 .dt-cell {
-    /* height: 35px; */
     height: auto;
 }
 
@@ -730,7 +708,6 @@ select.input-xs {
 
 /* when clicking on + and add some neaw sectin than the blue icon taking white bg on hover  */
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.paragraph .paragraph-control {
-    /* background-color: var(--card-bg); */
     background-color: transparent;
 }
 
@@ -740,13 +717,11 @@ select.input-xs {
 }
 
 .datatable .dt-row-filter .dt-filter.dt-input:focus {
-    /* box-shadow: var(--focus-default); */
     box-shadow: none;
 }
 
 /* same in edit top section */
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block.ce-block--focused .widget {
-    /* box-shadow: var(--shadow-base) !important; */
     box-shadow: none !important;
 }
 
@@ -769,47 +744,81 @@ select.input-xs {
     line-height: auto;
 }
 
-
-/* for item list height  */
-/* .layout-main-section .frappe-list,
-.layout-main-section .report-wrapper*/
-    /* height: calc(100vh - 268px); 
-    overflow: hidden;
-} 
-*/
-/* for the home page table scroll fixed it will apply on all data table and some table have 4 5 row so there desighn were desurbing*/
-/* .layout-main-section.frappe-card {
-    overflow: auto;
-    height: calc(100vh - 180px);
-} */
- /* it is for all data tables complete height like general ledger table */
-/* .layout-main-section-wrapper{
-    height: calc(100vh - 180px);
-}  */
-
 /* for top navbar icon takking 100% width which disturb the design */
-.content.page-container .row.flex.align-center.page-head-content.justify-between .col-md-4.col-sm-6.col-xs-7.page-title{
+.content.page-container .row.flex.align-center.page-head-content.justify-between .col-md-4.col-sm-6.col-xs-7.page-title {
     width: 50%;
 }
-.content.page-container .row.flex.align-center.page-head-content.justify-between > :last-child{
+
+.content.page-container .row.flex.align-center.page-head-content.justify-between> :last-child {
     width: 40%;
 }
-/* for the navbar sticky is takes to too much space from top */
-/* .page-head {
-    top: 0!important
-} */
+
 /* for the balance trial page project drop down  */
 .page-form .awesomplete>ul {
     min-width: 70px;
 }
+
 /* for the table aghosh form mobile screen tabs*/
-.level-right.text-muted.ellipsis .level-item.visible-xs.text-right{
+.level-right.text-muted.ellipsis .level-item.visible-xs.text-right {
     margin-left: -72px;
 
 }
-/* for the balance trial report navbar sticky positioning http://192.168.10.137/app/salary-slip/Sal%20Slip%2FAHF-PK-CO-00061%2F00005 thipage top details navbar */
+
+/* for the balance trial report navbar sticky positioning http://192.168.10.13 7/app/salary-slip/Sal%20Slip%2FAHF-PK-CO-00061%2F00005 thipage top details navbar */
 .form-tabs-sticky-down {
     top: 78px;
+}
+
+/* for the effect of sidebar text and icon btn sidebar icon  */
+.btn.btn-default,
+.btn.btn-default .icon,
+.filter-icon .es-icon {
+    color: unset;
+}
+
+.btn-group .btn.btn-default .filter-icon svg,
+.btn.btn-default .icon {
+    stroke: #383838;
+}
+
+.page-head .btn.btn-default:hover span svg.icon,
+.btn-group:hover .btn.btn-default .icon,
+.btn-group:hover .btn.btn-default .filter-icon svg,
+.btn-group .btn.btn-default:hover .filter-icon svg,
+.group-by-field.list-link .btn-default:hover span svg,
+.btn-group:hover .btn.btn-default,
+.btn-group:hover .btn.btn-default svg.icn {
+    stroke: #44abff;
+    border-color: #44abff;
+    color: #44abff;
+}
+
+.page-head .btn.btn-default:hover span svg.icon use[href="#icon-dashboard"] {
+    filter: invert(0);
+    stroke: #44abff;
+}
+.page-head .btn.btn-default:hover svg.icon {
+    color: var(--secondary-btn-text-color);
+    fill: var(--secondary-btn-text-color);
+}
+
+/* for the svg in navbar icon */
+span svg.icon.icon-sm use[href="#icon-dashboard"] {
+    filter: invert(1) brightness(20);
+}
+button.btn:hover span svg.icon.icon-sm use[href="#icon-dashboard"] {
+    fill: #44abff;
+    stroke: #44abff;
+}
+/* for the list item tree icon becoming white  */
+li[data-view="Tree"] svg.icon use[href="#icon-list"] {
+  fill: black;
+}
+
+
+/* for the same size of navbar content like list and heading text in navabar */
+.page-head .btn.btn-default {
+    font-size: var(--title-font-size);
 }
 
 /* ====================================================================================================== */
@@ -818,9 +827,9 @@ select.input-xs {
         height: unset;
         padding: 0;
     }
+
     /* for the sidebar menu taking height on mobile screen */
-    .row.layout-main .layout-side-section
-   {
+    .row.layout-main .layout-side-section {
         height: unset;
         padding: 0;
     }

@@ -199,7 +199,8 @@
         justify-content: space-between;
 
     }
-/* for all section left side css*/
+
+    /* for all section left side css*/
     .for-login .left_section,
     .for-forgot .left_section,
     .for-login-with-email-link .left_section {
@@ -459,16 +460,33 @@
     .for-login-with-email-link .page-card {
         padding: 45px 24px !important;
     }
+
     /* for left section css */
-    .for-forgot .left_section,.for-login-with-email-link .left_section{
+    .for-forgot .left_section,
+    .for-login-with-email-link .left_section {
         display: none;
     }
-    .form-forgot .page-card-head{
+
+    .form-forgot .page-card-head {
         padding-top: 0px;
     }
-    #page-login .for-forgot .page-card .page-card-body .field-icon, #page-login .for-login-with-email-link .page-card .page-card-body .field-icon{
-        top:7px
+
+    #page-login .for-forgot .page-card .page-card-body .field-icon,
+    #page-login .for-login-with-email-link .page-card .page-card-body .field-icon {
+        top: 7px
     }
+
+    /* for the home page login with mail modal height adjust */
+    .modal-dialog.msgprint-dialog {
+        max-height: 90vh;
+        /* optional: prevents it from exceeding screen */
+        height: auto !important;
+        /* ensures it doesn't stretch */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
 
     @media screen and (max-width: 1199px) {
@@ -645,10 +663,10 @@
         }
 
         #page-login .login-content.page-card::before {
-                content: url(/files/splash_akf_logo.png);
-                display: block;
-                margin-bottom: 20px;
-                text-align: center;
+            content: url(/files/splash_akf_logo.png);
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
         }
     }
 
@@ -895,9 +913,9 @@
         {{ logo_section('Forgot Password') }}
         <div class="login-content page-card">
             <form class="form-signin form-forgot hide" role="form">
-                 <div class="page-card-head">
-					<h4>Forgot Password</h4>
-				</div>
+                <div class="page-card-head">
+                    <h4>Forgot Password</h4>
+                </div>
                 <div class="page-card-body">
 
                     <div class="email-field">
